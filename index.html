@@ -1,1 +1,22 @@
-こんにちは
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>練習サイト</title>
+    </head>
+<body>
+    <h1 id="main-copy">こんにちは</h1>
+    <p>このメッセージがテストで切り替わります。</p>
+    
+    <button id="register-button" style="padding: 10px 20px; font-size: 18px;">
+        新規登録（練習用）
+    </button>
+
+    <script>
+        // ボタンを押したときにアラートを出す（動作確認用）
+        document.getElementById('register-button').onclick = function() {
+            alert('ボタンがクリックされました！');
+        };
+    </script>
+</body>
+</html>

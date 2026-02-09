@@ -5,31 +5,23 @@
 <script>(function(p,r,o,j,e,c,t,g){
 p['_'+t]={};g=r.createElement('script');g.src='https://www.googletagmanager.com/gtm.js?id=GTM-'+t;r[o].prepend(g);
 g=r.createElement('style');g.innerText='.'+e+t+'{visibility:hidden!important}';r[o].prepend(g);
-r[o][j].add(e+t);setTimeout(function(){if(false){r[o][j].remove(e+t);p['_'+t]=0}},c)
-})(window,document,'documentElement','classList','loading',8000,'PKSRT9X9')</script>
+r[o][j].add(e+t);setTimeout(function(){if(r[o][j].contains(e+t)){r[o][j].remove(e+t);p['_'+t]=0}},c)
+})(window,document,'documentElement','classList','loading',2000,'PKSRT9X9')</script>
 <!-- End Optimize Next -->
-
-    <meta charset="UTF-8">
-    <title>練習サイト</title>
-    </head>
+<meta charset="UTF-8">
+<title>練習サイト</title>
+</head>
 <body>
 
     <h1 id="main-copy">こんにちは</h1>
     <p>メッセージと画像がテストで切り替わります。</p>
 
-<div id="image-container" style="margin: 20px 0;">
-        <img id="test-image" src="img/day.jpg" alt="テスト画像" style="max-width: 100%; height: auto; border: 2px solid #ccc;">
+    <div id="image-container" style="margin: 20px 0;">
+        <img id="test-image" src="img/day.jpg" alt="テスト画像" style="max-width: 100%; height: auto;">
     </div>
     
     <button id="register-button" style="padding: 10px 20px; font-size: 18px;">
         新規登録（練習用）
     </button>
-
-    <script>
-        // ボタンを押したときにアラートを出す（動作確認用）
-        document.getElementById('register-button').onclick = function() {
-            alert('ボタンがクリックされました！');
-        };
-    </script>
 </body>
 </html>
